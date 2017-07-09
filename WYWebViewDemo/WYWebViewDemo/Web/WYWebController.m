@@ -29,7 +29,6 @@
     [self setupUI];
 }
 
-
 - (void)setupUI {
     _webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
     _webView.delegate = self;
@@ -40,14 +39,9 @@
     [self.view addSubview:_webView];
 }
 
-
 #pragma mark - UIWebViewDelegate
 - (void)webViewDidStartLoad:(UIWebView *)webView {
-//    _progressLayer = [WYWebProgressLayer new];
-//    _progressLayer.frame = CGRectMake(0, 64, SCREEN_WIDTH, 2);
-//    [self.view.layer addSublayer:_progressLayer];
-//    [_progressLayer startLoad];
-//    _progressLayer = [WLWebProgressLayer layerWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, 2)];
+    
     _progressLayer = [WYWebProgressLayer layerWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, 2)];
     [self.view.layer addSublayer:_progressLayer];
     [_progressLayer startLoad];
@@ -56,7 +50,6 @@
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     [_progressLayer finishedLoad];
     self.title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
-    
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
@@ -64,10 +57,6 @@
 }
 
 - (void)dealloc {
-    
-    [_progressLayer closeTimer];
-    [_progressLayer removeFromSuperlayer];
-    _progressLayer = nil;
     NSLog(@"i am dealloc");
 }
 
