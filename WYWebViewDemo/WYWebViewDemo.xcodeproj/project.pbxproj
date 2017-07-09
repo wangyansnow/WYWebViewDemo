@@ -17,6 +17,7 @@
 		E324492B1D3E04360067C036 /* WYWebProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E32449291D3E04360067C036 /* WYWebProgressLayer.m */; };
 		E324492E1D3E05700067C036 /* NSTimer+addition.m in Sources */ = {isa = PBXBuildFile; fileRef = E324492D1D3E05700067C036 /* NSTimer+addition.m */; };
 		E32449311D3E05910067C036 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E32449301D3E05910067C036 /* UIView+Frame.m */; };
+		E38408BF1F12348300CDCABF /* WLWebProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E38408BE1F12348300CDCABF /* WLWebProgressLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		E324492D1D3E05700067C036 /* NSTimer+addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+addition.m"; sourceTree = "<group>"; };
 		E324492F1D3E05910067C036 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		E32449301D3E05910067C036 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		E38408BD1F12348300CDCABF /* WLWebProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLWebProgressLayer.h; sourceTree = "<group>"; };
+		E38408BE1F12348300CDCABF /* WLWebProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLWebProgressLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				E32449271D3E04360067C036 /* WYWebController.m */,
 				E32449281D3E04360067C036 /* WYWebProgressLayer.h */,
 				E32449291D3E04360067C036 /* WYWebProgressLayer.m */,
+				E38408BD1F12348300CDCABF /* WLWebProgressLayer.h */,
+				E38408BE1F12348300CDCABF /* WLWebProgressLayer.m */,
 			);
 			path = Web;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 			files = (
 				E324492B1D3E04360067C036 /* WYWebProgressLayer.m in Sources */,
 				E32449161D3E03F70067C036 /* ViewController.m in Sources */,
+				E38408BF1F12348300CDCABF /* WLWebProgressLayer.m in Sources */,
 				E324492E1D3E05700067C036 /* NSTimer+addition.m in Sources */,
 				E32449311D3E05910067C036 /* UIView+Frame.m in Sources */,
 				E324492A1D3E04360067C036 /* WYWebController.m in Sources */,

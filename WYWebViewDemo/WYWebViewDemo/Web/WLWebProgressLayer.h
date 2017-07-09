@@ -7,12 +7,8 @@
 //
 
 #import <QuartzCore/QuartzCore.h>
-#import <UIKit/UIKit.h>
 
-#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
-
-
-@interface WYWebProgressLayer : CAShapeLayer
+@interface WLWebProgressLayer : CAShapeLayer
 
 + (instancetype)layerWithFrame:(CGRect)frame;
 

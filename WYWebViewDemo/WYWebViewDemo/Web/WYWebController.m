@@ -9,6 +9,7 @@
 #import "WYWebController.h"
 #import "WYWebProgressLayer.h"
 #import "UIView+Frame.h"
+#import "WLWebProgressLayer.h"
 
 @interface WYWebController ()<UIWebViewDelegate>
 
@@ -36,17 +37,19 @@
     [_webView loadRequest:request];
     
     _webView.backgroundColor = [UIColor whiteColor];
-    
-    _progressLayer = [WYWebProgressLayer new];
-    _progressLayer.frame = CGRectMake(0, 42, SCREEN_WIDTH, 2);
-    
-    [self.navigationController.navigationBar.layer addSublayer:_progressLayer];
     [self.view addSubview:_webView];
 }
 
 
 #pragma mark - UIWebViewDelegate
 - (void)webViewDidStartLoad:(UIWebView *)webView {
+//    _progressLayer = [WYWebProgressLayer new];
+//    _progressLayer.frame = CGRectMake(0, 64, SCREEN_WIDTH, 2);
+//    [self.view.layer addSublayer:_progressLayer];
+//    [_progressLayer startLoad];
+//    _progressLayer = [WLWebProgressLayer layerWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, 2)];
+    _progressLayer = [WYWebProgressLayer layerWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, 2)];
+    [self.view.layer addSublayer:_progressLayer];
     [_progressLayer startLoad];
 }
 
